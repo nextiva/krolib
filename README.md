@@ -524,11 +524,11 @@ Stop section with stop after 25 times executing/processing smth:
 🤝 Special Thanks
 -----------------
 
-- Alexander Omyshev @akalex
-- Dmitry Nikonenko @ndmytro
-- Phil Steitz @psteitz
-- Ralph Goers @rgoers
-- Vitalii Iaskal @vavilon17
+- Alexander Omyshev [@akalex](https://github.com/akalex)
+- Dmitry Nikonenko [@ndmytro](https://github.com/ndmytro)
+- Phil Steitz [@psteitz](https://github.com/psteitz)
+- Ralph Goers [@rgoers](https://github.com/rgoers)
+- Vitalii Iaskal [@vavilon17](https://github.com/vavilon17)
 
 📝 License
 ----------
