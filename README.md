@@ -5,7 +5,8 @@
 [![image](https://img.shields.io/pypi/l/krolib.svg)](https://pypi.org/project/krolib/)
 [![image](https://img.shields.io/pypi/pyversions/krolib.svg)](https://pypi.org/project/krolib/)
 
-DSL to handle complex schedules
+Magic library and DSL to handle complex schedules.
+
 
 🚀 Installation
 ---------------
