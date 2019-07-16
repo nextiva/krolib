@@ -2,6 +2,7 @@
 ===============================
 
 [![image](https://img.shields.io/pypi/v/krolib.svg)](https://pypi.org/project/krolib/)
+[![image](https://api.travis-ci.com/nextiva/krolib.svg)](https://travis-ci.com/nextiva/krolib/)
 [![image](https://img.shields.io/pypi/l/krolib.svg)](https://pypi.org/project/krolib/)
 [![image](https://img.shields.io/pypi/pyversions/krolib.svg)](https://pypi.org/project/krolib/)
 
