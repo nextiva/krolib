@@ -14,7 +14,7 @@ Magic library and DSL to handle complex schedules.
 
 As easy as usual.
 
-``` {.sourceCode .bash}
+```bash
 $ pip install krolib
 ```
 
@@ -36,7 +36,7 @@ update in runtime and always have a whole picture of what is the final result.
 
 Readable and flexible structure like:
 
-``` {.sourceCode .python}
+```python
 {
     'timezone': 'Europe/Kiev',
     'start': {
@@ -52,7 +52,7 @@ Readable and flexible structure like:
 
 Works like magic and very helpful to create periodical coroutines:
 
-``` {.sourceCode .python}
+```python
 from krolib.asyncio import scheduler
 from krolib.structs import TimeUnits, PeriodicalUnits
 
@@ -81,7 +81,7 @@ await some_coroutine()  # will be delayed and called twice!
 
 Delay several coroutines concurrently:
 
-``` {.sourceCode .python}
+```python
 from krolib.asyncio import scheduler
 from krolib.structs import TimeUnits, PeriodicalUnits
 
@@ -133,7 +133,7 @@ More examples
 
 Delay for 1 hour:
 
-``` {.sourceCode .python}
+```python
 from krolib.utils import just_now
 from krolib.parser import schedule_parser
 from krolib.structs import TimeUnits
@@ -154,7 +154,7 @@ assert (result - now).total_seconds() == 3600  # seconds
 
 Every last day of the month, infinite:
 
-``` {.sourceCode .python}
+```python
 import datetime
 import pytz
 
@@ -186,7 +186,7 @@ assert results == [
 
 Since tomorrow, every week with stop after the second one:
 
-``` {.sourceCode .python}
+```python
 import datetime
 
 from krolib.utils import just_now
@@ -219,7 +219,7 @@ Schedule Format
 The general schema structure which is currently supported by Krolib is
 presented here as a pseudo-Python code.
 
-``` {.sourceCode .python}
+```python
 {
    'start': {
        'on': datetime.datetime,
@@ -249,7 +249,7 @@ presented here as a pseudo-Python code.
 
 Also, there is special form for relative periodical rotations:
 
-``` {.sourceCode .python}
+```python
 {
    'start': {
        'on': datetime.datetime,
@@ -306,7 +306,7 @@ execution/processing. When this key is set, values in the `relative_timeshift`
 section should not be filled with any values.
 
 
-``` {.sourceCode .python}
+```python
 {
     'start': {
         'on': datetime.datetime.utcnow(),
@@ -334,7 +334,7 @@ proper values.
 
 Example of this kind of start section with the delay for 3 days:
 
-``` {.sourceCode .python}
+```python
 {
     'start': {
         'relative_timeshift': {
@@ -365,7 +365,7 @@ This key holds the type of repeats:
 
 Example of yearly repeats on September, 3-rd at 20:30:
 
-``` {.sourceCode .python}
+```python
 {
     'periodical': {
         'repeats': 'yearly',
@@ -387,7 +387,7 @@ For example, for daily repeats the every key could be set to 1 — this would
 mean every day repeats, to 3 — this would mean skip two days, then execute
 every third day, skip two days again, etc.
 
-``` {.sourceCode .python}
+```python
 {
     'periodical': {
         'repeats': 'daily',
@@ -411,7 +411,7 @@ Valid weekday range is from 0 to 6 where 0 is Monday and 6 is Sunday.
 Example of weekly repeats (every week without skipping) on Mondays and Fridays
 at 15.00:
 
-``` {.sourceCode .python}
+```python
 {
     'periodical': {
         'repeats': 'weekly',
@@ -459,7 +459,7 @@ This field should hold a string with one of the following values:
 
 Example of monthly repeats on the third Friday of the month at 15.00:
 
-``` {.sourceCode .python}
+```python
 {
     'periodical': {
         'repeats': 'monthly',
@@ -485,7 +485,7 @@ stop it's execution. If set to `False` — other keys should be also set.
 
 Stop section with never ending repeats:
 
-``` {.sourceCode .python}
+```python
 {
     'stop': {
         'never': True,
@@ -497,7 +497,7 @@ Stop section with never ending repeats:
 
 This key holds exact time (datetime object) when to stop the recurring:
 
-``` {.sourceCode .python}
+```python
 {
     'stop': {
         'never': False,
@@ -513,7 +513,7 @@ schedule.
 
 Stop section with stop after 25 times executing/processing smth:
 
-```
+```python
 {
     'stop': {
         'never': False,
