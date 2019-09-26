@@ -74,7 +74,7 @@ setup(
     long_description_content_type='text/markdown',
     install_requires=[
         'python-dateutil==2.8.0',
-        'pytz==2019.1',
+        'pytz~=2019.1',
         'toolz>=0.8.2',
         'tzlocal>=1.3',
         'voluptuous==0.11.5',
