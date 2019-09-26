@@ -15,7 +15,7 @@ URL = 'https://github.com/nextiva/krolib'
 EMAIL = 'roman.zayev@nextiva.com'
 AUTHOR = 'Nextiva'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '1.2.0'
+VERSION = '1.2.1'
 
 
 try:
