@@ -86,7 +86,7 @@ setup(
         'pytest-flakes==4.0.0',
         'pytest-pycodestyle==1.4.0',
     ],
-    setup_requires=['pytest-runner'],
+    setup_requires=['pytest-runner', 'wheel'],
     python_requires=REQUIRES_PYTHON,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
