@@ -80,7 +80,7 @@ setup(
         'voluptuous==0.11.5',
     ],
     tests_require=[
-        'pytest==5.0.1',
+        'pytest==9.0.3',
         'pytest-asyncio==0.10.0',
         'pytest-cov==2.7.1',
         'pytest-flakes==4.0.0',
